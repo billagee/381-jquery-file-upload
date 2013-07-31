@@ -39,4 +39,6 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'carrierwave'
-gem 'rmagick'
+gem 'rmagick', '2.13.2'
+gem 'fancybox-rails'
+
