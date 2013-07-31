@@ -17,3 +17,13 @@ jQuery ->
       if data.context
         progress = parseInt(data.loaded / data.total * 100, 10)
         data.context.find('.bar').css('width', progress + '%')
+
+jQuery ->
+  $("a.grouped_elements").fancybox({
+      'transitionIn'  :   'elastic',
+      'transitionOut' :   'elastic',
+      'speedIn'       :   600,
+      'speedOut'      :   200,
+      'overlayShow'   :   false
+  });
+

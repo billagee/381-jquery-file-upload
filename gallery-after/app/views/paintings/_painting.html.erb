@@ -2,6 +2,8 @@
   <%= link_to image_tag(painting.image_url(:thumb)), painting if painting.image? %>
   <div class="name"><%= painting.name %></div>
   <div class="actions">
+<%# This is the line to add: -%>
+     <%= link_to "view in gallery", painting.image_url, { :class => "grouped_elements", :rel => "zomg_awesome_images" } %> |
     <%= link_to "edit", edit_painting_path(painting) %> |
     <%= link_to "remove", painting, :confirm => 'Are you sure?', :method => :delete %>
   </div>
